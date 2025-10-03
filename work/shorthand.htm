@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ternary</title>
+
+</head>
+<body>
+    <input id="age" value="eighteen"/>
+    <button onclick="myfunction()">submit</button>
+    <p id="demo"></p>
+</body>
+<script>
+    function myfunction() {
+        let age = document.getElementById("age").value;
+        let voteable = (age < 18) ? "too young":"old enough";
+        document.getElementById("demo").innerHTML=voteable;
+    }
+</script>
+</html>

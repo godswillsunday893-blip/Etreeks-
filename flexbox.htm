@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flexcontainer{
+            display: flex;
+            flex-direction: row;
+            text-wrap: nowrap;
+            background-color: blueviolet;
+            border-radius: 5%;
+            border-top: 4px;  
+        }
+        .flexcontainer div {
+            background-color: aqua;
+            width: 50%;
+            line-height: 60px;
+            margin: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 5%;
+
+        }
+        @media (max-width: 400px) {
+            .flexcontainer {
+                flex-direction: column;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>from one to five</h1>
+    <div class="flexcontainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).
+
+The "flex-direction: column;" stacks the flex items vertically (from top to bottom).
+
+Resize the browser window to see that the direction changes when the screen size is 800px wide or smaller.</p>
+<p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).
+
+The "flex-direction: column;" stacks the flex items vertically (from top to bottom).
+Resize the browser window to see that the direction changes when the screen size is 800px wide or smaller.</p>
+    
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("background.jpg");
+    padding: 15px 0px 40px 0px;
+    max-width: 100%;
+    height: auto ;
+    font-family: "Inter";
+}
+.hero nav {
+    padding: 0px 20px;
+    font-family: "Inter";
+}
+nav ul {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li {
+    list-style-type:none;
+}
+nav ul li img{
+    width: 40px;
+}
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+nav ul li a:hover{
+    color: #0a8f2b;
+    font-size: 21px;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+    font-family: "inter";
+}
+nav ul li:nth-child(1) > a{
+    color: rgba(37, 216, 37, 0.678);
+    font-size: 25px;
+    font-weight: 300;
+}
+nav ul li:nth-child(1) a:hover{
+    background-color:transparent;
+    text-decoration: none;
+}
+nav ul li button {
+    background-color: rgb(0, 128, 0);
+    margin-top: 9px;
+    padding: 7px 7px;
+    border: 10px ;
+    border-radius: 20px;
+    
+}
+nav ul li button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav ul li button a:hover{
+    color: rgb(144, 250, 102);
+    font-size: 17.3px;
+    
+}
+.text {
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter";
+}
+.text span{
+    color: rgb(101, 223, 52);
+    text-align: center;
+    font-size: 12px;
+}
+.text h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+.text p {
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+}
+.text button {
+    background-color: rgb(0, 128, 0);
+    margin-top: 23px;
+    padding: 7px 7px;
+    border: 10px ;
+    border-radius: 20px;
+}
+.text button a{
+    color: white;
+    text-decoration: none;
+}
+.text button a:hover{
+    font-size: 13.7px;
+    color: #42eb6c;
+}
+.online{
+    background-color:white;
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+.online-text{
+    text-align: center;
+    padding-top: 60px;
+}
+.online-text span{
+    color: rgb(0, 128, 0);
+    font-size: 12px;
+    font-weight: bold;
+}
+.online-text h3{
+    color: black;
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom: 52px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    gap: 40px;
+}
+ .container .package{
+    text-align: center;
+    align-items:center ;
+    padding-top: 32px;
+}
+.package span{
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 38px;  
+}
+.package p{
+    color: rgb(49, 47, 47);
+    padding-top: 21px;
+}
+.package img{
+    padding-bottom: 28px;;
+}
+.we{
+    width: 32%;
+    height: auto;
+    float: left;
+    position: absolute;  
+    margin-left: 12.5%;  
+}
+.offer-text{
+    text-align:center;
+    
+    padding-top: 200px;
+    margin-left: 20%;    
+}
+.offer-text span{
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 128, 0);
+    margin-bottom: 39px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.offer-text h4{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    font-weight: bolder;
+}
+.offer-text p{
+    color: rgb(58, 55, 55);
+    padding-bottom: 21px;
+
+}
+.offer-text ul{
+    list-style-type: none;
+    font-weight: bolder;
+}
+.offer-text ul li{
+    padding: 8px;    
+}
+.offer-text button{
+     background-color: rgb(0, 128, 0);
+    margin-top: 23px;
+    padding: 10px 10px 10px 10px;
+    border: 10px ;
+    border-radius: 22px;  
+    margin-bottom: 20px;  
+}
+.offer-text button a{
+    color: white;
+    text-decoration: none;
+}
+.offer-text button a:hover{
+    font-size: 13.7;
+    color: #42eb6c;
+}
+footer{
+    width:100% ;
+    background: linear-gradient(to right, #0c5a19);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.col{
+    flex-basis: 25%;
+    padding:10px ;
+}
+.col:nth-child(2),.col:nth-child(3) {
+    flex-basis: 15%;
+}
+.col h6{
+    font-size: 14px;
+}
+.logo{
+    width: 80px;
+    margin-bottom:40px;
+}
+.col h5{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+form{
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .fa-regular {
+    font-size: 17px;
+    margin-right: 17px;
+} 
+form input{
+    width: 100%;
+    background: transparent;
+    color:white;
+    border: 0;
+    outline: none;
+
+}
+form button{
+    background:transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    
+}
+form button .fa-solid{
+    font-size: 17px;
+    color: #ccc;
+}
+.social{
+    width: 200px; 
+    cursor: pointer;
+    font-size: 21px;
+}
+hr{     
+    width: 72%;
+    border: 0;
+    border-bottom:1px solid #ccc;
+}
+.copyright{
+    text-align: center;
+    padding-top: 13px;
+
+}
+.underline{
+    width:100% ;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+}
+.underline span{
+    width:11px ;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 3;
+    
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -10px;
+    }
+    100%{
+        left: 90%;
+    }
+}
+@media (max-width:500px){
+    .hero{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .hero nav {
+      max-width: 100%;
+      flex-direction: column;
+}
+    .hero nav ul{
+       max-width: 100%;
+    }
+    .nav ul{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .text{
+        max-width: 100%;
+    }
+    .online{
+        max-width: 100%;
+    }
+    .container .package{
+        max-width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .package{
+        max-width: 100%;
+    }
+    
+    
+    footer{
+        bottom: unset;
+    }
+    .col{
+    flex-basis: 100%;
+    
+}
+.col:nth-child(2),.col:nth-child(3) {
+    flex-basis: 100%;
+}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ages</title>
+</head>
+<style>
+     body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        #container {
+            background: linear-gradient(to right, #b0d1a7f5            );
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(11, 41, 4, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #048023;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 30%;
+            padding: 10px;
+            border: 2px solid #023f19;
+            border-radius: 5px;
+            font-size: 10px;
+            background-color: #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #084208;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #144105e8;
+        }
+
+        
+    
+</style>
+<body>
+    <div id="container">
+    <h1>age checker app</h1>
+    <input type="number" id="check" placeholder="input your age">
+    <button onclick="agechecker()" >check age</button>
+    </div>
+    <p id="demo"></p>
+    <script>
+        function agechecker() {
+            let agevalue = document.getElementById("check").value;
+            let age = document.getElementById("demo");
+            if(agevalue === "")return
+
+            if(agevalue => 18){
+                age.innerHTML = "you are an adult"
+            }
+            else{
+                age.innerHTML = "you are a minor"
+            }
+            
+
+        }
+
+      
+    
+    </script>
+</body>
+</html>
